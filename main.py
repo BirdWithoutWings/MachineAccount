@@ -1,10 +1,3 @@
-# This is a sample Python script.
-
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
-
-
-# Press the green button in the gutter to run the script.
 import os
 
 from docx import Document
@@ -41,7 +34,7 @@ def dowork(filepath):
                             if os.path.splitext(mc_file)[1] == '.txt':
                                 txtlist.append(mc_file)
                             else:
-                                piclist.append(os.path.join(filepath, file, year_path,month_path, mc_path, mc_file))
+                                piclist.append(os.path.join(filepath, file, year_path, month_path, mc_path, mc_file))
                         if txtlist.__len__() > 1:
                             print('there are more than one txt file in ' + os.path.join(filepath, file, year_path,
                                                                                         month_path, mc_path))
@@ -109,5 +102,3 @@ if __name__ == "__main__":
     # print("-------------------------")
     # for name in allname:
     #     print(name)
-
-
