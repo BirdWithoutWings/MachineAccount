@@ -65,28 +65,6 @@ def dowork(filepath):
                             tem_docx.render(result_content_dict)
                             tem_docx.add_page_break()
                             target_composer.append(tem_docx)
-                            # # 添加标题
-                            # title = document.add_paragraph()
-                            # run = title.add_run("三改一拆工作")
-                            # run.font.bold = True  # 加粗
-                            # # title.font.italic = True  # 斜体
-                            # # title.font.underline = True  # 下划线
-                            # # title.font.strike = True  # 删除线
-                            # # title.font.shadow = True  # 阴影
-                            # run.font.size = Pt(16)  # 字体大小
-                            # run.font.color.rgb = RGBColor(0, 0, 0)  # 颜色
-                            # run.font.name = "仿宋GB2312"  # 字体
-                            # run.element.rPr.rFonts.set(qn('w:eastAsia'), "仿宋GB2312")  # 中文字体
-                            # title.alignment = WD_PARAGRAPH_ALIGNMENT.CENTER
-                            # # 添加标题
-                            #
-                            # # 添加表格
-                            # table = document.add_table(rows=5, cols=3, style="Normal Table")
-                            # table.alignment = WD_CELL_VERTICAL_ALIGNMENT.CENTER
-                            # table.cell(1, 1).width = Cm(3)
-                            # table.cell(1, 1).height = Cm(0.6)
-                            #
-                            # document.add_paragraph("日期" + concentdict["日期"])
                 target_composer.save(os.path.join(filepath, file, year_path) + "\\" + docname)
         elif file == '安全生产':
             print(file)
