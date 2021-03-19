@@ -6,13 +6,11 @@
 
 # Press the green button in the gutter to run the script.
 import os
+
 from docx import Document
-from docx.shared import Pt, Cm, RGBColor
-from docx.oxml.ns import qn
-from docx.enum.text import WD_PARAGRAPH_ALIGNMENT
-from docx.enum.table import WD_CELL_VERTICAL_ALIGNMENT
-from docxtpl import DocxTemplate, InlineImage
+from docx.shared import Cm
 from docxcompose.composer import Composer
+from docxtpl import DocxTemplate, InlineImage
 
 
 def dowork(filepath):
